@@ -149,16 +149,46 @@
 
             Population: 923,608
 
-            Contact Us
-            First Name (Enter first name)
-            Last Name (Enter last name)
+            <form>
+                <h2>Contact Us</h2>
+                <label for="firstName">First Name (Enter first name)</label>
+                <input type="text" name="firstName" id="firstName">
 
-            Contact Method (Email, Text, Phone)
-            Email Address (Enter Email)
-            Phone Number (Enter telephone number)
+                <label for="lastName">Last Name (Enter last name)</label>
+                <input type="text" name="lastName" id="lastName">
 
-            Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-            Travel Time (Fall, Winter, Spring, Summer, Flexible)
+                <fieldset>
+                    <legend>Contact Method (Email, Text, Phone)</legend>
+                    <input type="radio" name="contactMethod" id="email" value="email">
+                    <label for="email">Email Address (Enter Email)</label>
+
+                    <input type="radio" name="contactMethod" id="phone" value="phone">
+                    <label for="email">Phone Number (Enter telephone number)</label>
+                </fieldset>
+
+                <label for="myDestination">Destination</label>
+                <select size="1" name="myDestination" id="myDestination">
+                    <option value="">Select Destination</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Granada">Granada</option>
+                    <option value="Ibiza">Ibiza</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Majorca">Majorca</option>
+                    <option value="Seville">Seville</option>
+                    <option value="Tenerife">Tenerife</option>
+                    <option value="Valencia">Valencia</option>
+
+                <label for="myTravelTime">Travel Time</label>
+                <select size="1" name="myTravelTime" id="myTravelTime">
+                    <option value="">Select Travel Time</option>
+                    <option value="Fall">Fall</option>
+                    <option value="Winter">Winter</option>
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Flexible">Flexible</option>
+
+                <input type="submit" id="mySubmit" value="Submit">
+            </form>
         </main>
 
         <footer>
